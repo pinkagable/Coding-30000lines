@@ -1,1 +1,2 @@
 D:\c++zuopin\esercise\Debug\esercise.exe
+D:\c++zuopin\c-30000lines\Debug\esercise.exe
