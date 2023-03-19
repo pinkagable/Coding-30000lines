@@ -308,13 +308,75 @@ int main()
 //	putchar(ch);
 //	return 0;
 //}
+//#include<stdio.h>
+//int main()
+//{
+//	int ch = 0;
+//	while ((ch = getchar()) != EOF)
+//	{
+//		putchar(ch);
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	char password[20] = { 0 };
+//	printf("请输入密码：>");
+//	scanf("%s", password);
+//	printf("请确认密码(Y/N):>");
+//	int temp = 0;
+//	while ((temp=getchar() )!= '\n')
+//	{
+//		;
+//	}
+//	int ch = getchar();
+//	if (ch == 'Y')
+//	{
+//		printf("确认成功！\n");
+//	}
+//	else
+//	{
+//		printf("确认失败！\n");
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	int i = 0;
+//	while (i <= 10)
+//	{
+//		printf("%d ", i);
+//		i++;
+//	}
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	int i = 0;
+//	for (i = 1; i <= 10; i++)
+//	{
+//		printf("%d", i);
+//	}
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	int i = 0;
+//	int j = 0;
+//	for (; i < 3; i++)
+//		for (; j < 3; j++)
+//			printf("hello world\n");
+//	//return 0;
+//}
 #include<stdio.h>
 int main()
 {
-	int ch = 0;
-	while ((ch = getchar()) != EOF)
+	int i = 0;
+	do
 	{
-		putchar(ch);
-	}
-	return 0;
+		printf("hello world\n");
+		i++;
+	} while (i < 10);
 }
