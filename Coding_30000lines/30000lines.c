@@ -370,13 +370,150 @@ int main()
 //			printf("hello world\n");
 //	//return 0;
 //}
+//#include<stdio.h>
+//int main()
+//{
+//	int i = 0;
+//	do
+//	{
+//		printf("hello world\n");
+//		i++;
+//	} while (i < 10);
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	int n = 1;
+//	int num = 1;
+//	scanf("%d",&n);
+//	num = n;
+//	do
+//	{
+//		n--;
+//		num *= n;
+//	}while(n>1);
+//	printf("%d ", num);
+//	return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	int i = 0;
+//	int sum = 1;
+//	scanf("%d", &i);
+//	for (i; i > 0; i--)
+//	{
+//		sum *= i;
+//	}
+//	printf("%d\n", sum);
+//}
+//#include<stdio.h>
+//int main() 
+//{
+//	int m = 0;
+//	int n = 0;
+//	int i = 0;
+//	int num = 1;
+//	int sum = 0;
+//	printf("请输入要计算前一至几的阶乘和\n");
+//	scanf("%d", &m);
+//	for (n = 1; n <= m; n++)
+//	{
+//		num = 1;//计算n的阶乘之前，把num处理为1
+//		for (i = 1; i <= n; i++)
+//		{
+//			num *= i;
+//		}
+//		sum += num;
+//	}
+//	printf("%d", sum);
+//	return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	int i = 0;
+//	int n = 0;
+//	int num = 1;
+//	int sum = 0;
+//	printf("请输入要计算一至几的阶乘和");
+//	scanf("%d", &n);
+//	for (i = 1; i <= n; i++) {
+//		num *= i;
+//		sum += num;
+//	}
+//	printf("%d", sum);
+//	return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//    int k = 7;//要查找的数字
+//    //在arr这个有序的数组中查找k（7）的值
+//    int sz = sizeof(arr) / sizeof(arr[0]);//数组的元素个数
+//    int left = 0;
+//    int right = sz - 1;
+//    while (left <= right)
+//    {
+//        int mid = (right + left) / 2;
+//        if (arr[mid] < k)
+//        {
+//            left = mid + 1;
+//        }
+//        else if (arr[mid] > k)
+//        {
+//            right = mid - 1;
+//        }
+//        else
+//        {
+//            printf("找到了：下标是%d", mid);
+//            break;
+//        }
+//    }
+//    if (left > right)
+//    {
+//        printf("找不到了\n");
+//    }
+//    return 0;
+//}
+//#include<stdio.h>
+//#include<string.h>
+//int main()
+//{
+//	char arr1[] = "welcome to c world!!!!!!!!";
+//	char arr2[] = "##########################";
+//	int left = 0;
+//	int right = strlen(arr1) - 1;
+//	while(left<=right)
+//	{
+//	arr2[left] = arr1[left];
+//	arr2[right] = arr1[right];
+//	printf("%s\n", arr2);
+//	left++;
+//	right--;
+//	}
+//	return 0;
+//}
 #include<stdio.h>
+#include<windows.h>//调用windows.h中的sleep函数
+#include<string.h>//调用strlen()函数
 int main()
 {
-	int i = 0;
-	do
+	char arr1[] = "welcome to c world!!!!!!!!";
+	char arr2[] = "##########################";
+	int left = 0;
+	int right = strlen(arr1) - 1;
+	while (left <= right)
 	{
-		printf("hello world\n");
-		i++;
-	} while (i < 10);
+		arr2[left] = arr1[left];
+		arr2[right] = arr1[right];
+		printf("%s\n", arr2);
+		Sleep(1000);
+		system("cls");
+		left++;
+		right--;
+	}
+	printf("%s\n", arr2);
+	return 0;
 }
