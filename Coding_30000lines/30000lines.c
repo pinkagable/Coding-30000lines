@@ -676,9 +676,8 @@ int main()
 	int n = 0;
 	int t = 0;
 	scanf("%d%d", &m, &n);
-	while (m % n)
+	while (t=m % n)
 	{
-		t = m % n;
 		m = n;
 		n = t;
 	}
