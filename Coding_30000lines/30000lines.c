@@ -61,10 +61,11 @@ int main()
 //{
 //	int num1 = 0;
 //	int num2 = 0;
-//	scanf_s("%d %d", &num1,&num2);
+//	scanf("%d %d", &num1, &num2);
 //	int sum = Add(num1, num2);
 //	printf("%d\n", (int)sum);
 //	return 0;
+//}
 //}
 //#include<stdio.h>
 //int main()
@@ -495,25 +496,218 @@ int main()
 //	}
 //	return 0;
 //}
+//#include<stdio.h>
+//#include<windows.h>//调用windows.h中的sleep函数
+//#include<string.h>//调用strlen()函数
+//int main()
+//{
+//	char arr1[] = "welcome to c world!!!!!!!!";
+//	char arr2[] = "##########################";
+//	int left = 0;
+//	int right = strlen(arr1) - 1;
+//	while (left <= right)
+//	{
+//		arr2[left] = arr1[left];
+//		arr2[right] = arr1[right];
+//		printf("%s\n", arr2);
+//		Sleep(1000);
+//		system("cls");
+//		left++;
+//		right--;
+//	}
+//	printf("%s\n", arr2);
+//	return 0;
+//}
+//#include<stdio.h>
+//#include<string.h>
+//int main()
+//{
+//	int i = 0;
+//	//假设正确的密码是字符串“123456”
+//	char password[20] = { 0 };
+//	for (i = 0; i < 3; i++)
+//	{
+//		printf("请输入密码;>");
+//		scanf("%s", password);
+//		//if (password == "123456")//err，两个字符串比较，不能用==，应该使用strcmp
+//		if (strcmp(password, "123456") == 0)
+//		{
+//			printf("登陆成功\n");
+//			break;
+//		}
+//		else
+//		{;
+//			printf("密码错误,你还有%d次机会\n",2-i);
+//		}
+//	}
+//	if (i == 3)
+//			printf("三次密码均错误，退出程序\n");
+//	
+//}
+//#include<stdio.h>
+//#include<stdlib.h>
+//#include<time.h>
+//void menu()//打印菜单
+//{
+//	printf("********************************\n");
+//	printf("**********    1.play    ********\n");
+//	printf("**********    0.exit    ********\n");
+//	printf("********************************\n");
+//}
+//void game()
+//{
+//	//猜数字的实现
+//	//1、生成随机数
+//	//rand()返回了一个0~32767的数字
+//	//时间戳
+//	int ret = rand()%100+1;
+//	//2、猜数字
+//	int guess = 0;
+//	while (1)
+//	{
+//		printf("请猜数字:>");
+//		scanf("%d", &guess);
+//		if (guess < ret)
+//		{
+//			printf("猜小了\n");
+//		}
+//		else if (guess > ret) 
+//		{
+//			printf("猜大了\n");
+//		}
+//		else
+//		{
+//			printf("恭喜你猜对了！！\n");
+//			break;
+//		}
+//	}
+//}
+////3:40起床
+//int main()
+//{
+//	int input = 0;
+//	srand((unsigned int)time(NULL));
+//
+//	do {
+//		menu();
+//		printf("请选择:>");
+//		scanf("%d", &input);
+//			switch (input)
+//			{
+//			case 1:
+//				game();
+//				break;
+//			case 0:
+//				printf("退出游戏\n");
+//				break;
+//			default:
+//				printf("选择错了,重新选择\n");
+//				break;
+//			}
+//
+//	} while (input);
+//	return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	int a, b, c = 0;
+//	//输入
+//	scanf("%d%d%d" ,&a, &b,&c);
+//	//调整顺序
+//	if (a < b)
+//	{
+//		int temp=a;
+//		a = b;
+//		b = temp;
+//	}
+//	if (a < c)
+//	{
+//		int temp = a;
+//		a = c;
+//		c = temp;
+//	}
+//	if (b < c)
+//	{
+//		int temp = b;
+//		b = c;
+//		c = temp;
+//	}
+//	printf("%d %d %d\n", a, b, c);
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	int i = 0;
+//	for (i = 1; i <= 100; i++)
+//	{
+//		if (i % 3 == 0)
+//		{
+//			printf("%d ", i);
+//		}
+//	}
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	int m = 0;
+//	int n = 0;
+//	scanf("%d%d", &m, &n);
+//	int max = 0;
+//	if (m > n)
+//		max = n;
+//	else
+//		max = m;
+//	while (1)
+//	{
+//		if (m% max == 0 && n % max == 0)
+//		{
+//			printf("最大公约数是%d", max);
+//			break;
+//		}
+//		max--;
+//	}
+//	return 0;
+//}
 #include<stdio.h>
-#include<windows.h>//调用windows.h中的sleep函数
-#include<string.h>//调用strlen()函数
 int main()
 {
-	char arr1[] = "welcome to c world!!!!!!!!";
-	char arr2[] = "##########################";
-	int left = 0;
-	int right = strlen(arr1) - 1;
-	while (left <= right)
+	int m = 0;
+	int n = 0;
+	int t = 0;
+	scanf("%d%d", &m, &n);
+	while (m % n)
 	{
-		arr2[left] = arr1[left];
-		arr2[right] = arr1[right];
-		printf("%s\n", arr2);
-		Sleep(1000);
-		system("cls");
-		left++;
-		right--;
+		t = m % n;
+		m = n;
+		n = t;
 	}
-	printf("%s\n", arr2);
-	return 0;
+	printf("最大公约数%d\n", n);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
