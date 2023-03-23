@@ -669,23 +669,81 @@ int main()
 //	}
 //	return 0;
 //}
-#include<stdio.h>
-int main()
-{
-	int m = 0;
-	int n = 0;
-	int t = 0;
-	scanf("%d%d", &m, &n);
-	while (t=m % n)
-	{
-		m = n;
-		n = t;
-	}
-	printf("最大公约数%d\n", n);
-}
+//#include<stdio.h>
+//int main()
+//{
+//	int m = 0;
+//	int n = 0;
+//	int t = 0;
+//	scanf("%d%d", &m, &n);
+//	while (t=m % n)
+//	{
+//		m = n;
+//		n = t;
+//	}
+//	printf("最大公约数%d\n", n);
+//}
 
-
-
+//#include<stdio.h>
+//int main()
+//{
+//	int i = 0;
+//	for (i = 1000; i <= 2000; i = i + 4)
+//	{
+//		while (i % 100 != 0||i%400==0)
+//		{
+//			printf("%d ", i);
+//			break;
+//		}
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	int i = 0;
+//	for (i = 100; i <= 200; i++)
+//	{
+//		int a = 0;
+//		//判断i是否为素数
+//		for (a = 2; a < i; a++)
+//		{
+//			if (i % a == 0)
+//			{
+//				break;
+//			}
+//		}
+//		if (i == a)
+//			{
+//				printf("%d ", i);
+//			}
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//#include<math.h>
+//int main()
+//{
+//	int i = 0;
+//	for (i = 101; i <= 200; i+=2)
+//	{
+//		int j = 0;
+//		int flag = 1;//循环内用到的数要在循环内赋初值
+//		for (j = 2; j <=sqrt(i); j++)
+//		{
+//			if (i % j == 0)
+//			{
+//				flag = 0;
+//				break;
+//			}
+//		}
+//		if (flag == 1)
+//		{
+//			printf("%d ", i);
+//		}
+//	}
+//	return 0;
+//}
 
 
 
