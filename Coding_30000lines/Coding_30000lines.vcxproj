@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{dc54686e-ca57-49ee-9618-aeb4e4f61bc7}</ProjectGuid>
+    <ProjectGuid>{2065090b-dd2f-4712-999d-c244e2762221}</ProjectGuid>
     <RootNamespace>Coding30000lines</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="30000lines.c" />
+    <ClCompile Include="Coding_30000lines.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="30000lines.c">
+    <ClCompile Include="Coding_30000lines.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
