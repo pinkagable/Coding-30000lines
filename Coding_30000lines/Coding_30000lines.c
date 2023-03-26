@@ -938,29 +938,130 @@ int main()
 //	}
 //	return 0;
 //}
+//#include<stdio.h>
+//void Add(int* p)
+//{
+//	(*p)++;
+//}
+//int main()
+//{
+//	int num = 0;
+//	Add(&num);
+//	printf("%d\n", num);
+//	Add(&num);
+//	printf("%d\n", num);
+//	Add(&num);
+//	printf("%d\n", num);
+//	return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	printf("%d", printf("%d",printf("%d",43)));
+//	return 0;
+//}
+//void print(unsigned int n)
+//{
+//	if (n > 9)
+//	{
+//		print(n / 10);
+//	}
+//	printf("%d ", n % 10);
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	unsigned int num = 0;
+//	scanf("%u", &num);
+//	print(num);//print函数可以打印参数部分数字的每一位
+//	return 0;
+//}
+
+//int my_strlen(char*str)
+//{
+//	int count = 0;
+//	while (*str != '\0')
+//	{
+//		count++;
+//		str++;
+//	}
+//	return count;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	char arr[] = "hello world";
+//	printf("%d", my_strlen(arr));
+//	return 0;
+//}
+//#include<stdio.h>
+//int my_strlen(char* str)
+//{
+//	if (*str != '\0')
+//	{
+//		return 1 + my_strlen(str + 1);
+//	}
+//	else return 0;
+//}
+//int main()
+//{
+//	char arr[] = "hello world";
+//	printf("%d", my_strlen(arr));
+//	return 0;
+//}
+//#include<stdio.h>
+//int factorial(int n)
+//{
+//	if (n <= 1)
+//	{
+//		return 1;
+//	}
+//	else return n*factorial(n - 1);
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	printf("%d", factorial(n));
+//}
+//#include<stdio.h>
+//int Fib(int n)
+//{
+//	if (n <= 2)
+//	{
+//		return 1;
+//	}
+//	else
+//		return Fib(n-1)+Fib(n-2);
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d",&n);
+//	printf("%d", Fib(n));
+//	return 0;
+//}
 #include<stdio.h>
-void Add(int* p)
+int Fib(int n)
 {
-	(*p)++;
+	int a = 1;
+	int b = 1;
+	int c = 1;
+	while (n>=2)
+	{
+		c = a + b;
+		a = b;
+		b = c;
+		n--;
+	}
+	return c;
 }
 int main()
 {
-	int num = 0;
-	Add(&num);
-	printf("%d\n", num);
-	Add(&num);
-	printf("%d\n", num);
-	Add(&num);
-	printf("%d\n", num);
-	return 0;
+	int n = 0;
+	scanf("%d", &n);
+	printf("%d", Fib(n));
 }
-
-
-
-
-
-
-
 
 
 
