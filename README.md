@@ -1,3 +1,1 @@
-# C-30000lines
-xiaobai_exercise
-TO SHARE MY STUDY EXPERIENCE
+本项目包含leetcode的题解及解析，不定期更新。
